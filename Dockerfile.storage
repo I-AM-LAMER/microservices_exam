@@ -1,0 +1,9 @@
+FROM alpine:3.21
+
+WORKDIR /db
+
+COPY ./bin/storage-service /db/storage-service
+
+EXPOSE 80
+
+CMD [ "./storage-service" ]
