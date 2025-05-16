@@ -4,6 +4,8 @@ WORKDIR /app
 
 COPY ./bin/core-service /app/core-service
 
+RUN chmod +x /app/core-service
+
 EXPOSE 80
 
 CMD [ "./core-service" ]
